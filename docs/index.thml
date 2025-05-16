@@ -1,0 +1,7 @@
+<!-- スクロールするためのボタン -->
+<button id="scrollButton">ここに移動</button>
+
+<!-- スクロール先の場所（ターゲット） -->
+<div id="targetSection" style="margin-top: 1000px;">
+  <h2>ここが目的地！</h2>
+</div>
