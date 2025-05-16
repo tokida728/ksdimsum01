@@ -4,17 +4,14 @@
   <meta charset="UTF-8">
   <title>ボタンで即ジャンプ</title>
   <style>
-    body {
-      font-family: sans-serif;
-    }
     button {
+      font-size: 18px;
       margin: 10px;
       padding: 10px 20px;
-      font-size: 16px;
     }
     .target {
       margin-top: 1000px;
-      padding: 40px;
+      padding: 50px;
       background: #f0f0f0;
       border: 1px solid #ccc;
     }
@@ -22,13 +19,27 @@
 </head>
 <body>
 
-  <!-- ボタン（押すと即ジャンプ） -->
-  <button id="issueButton1">1にジャンプ</button>
-  <button id="issueButton2">2にジャンプ</button>
-  <button id="issueButton3">3にジャンプ</button>
+  <!-- ボタン（JSでジャンプ） -->
+  <button id="jump1">1にジャンプ</button>
+  <button id="jump2">2にジャンプ</button>
+  <button id="jump3">3にジャンプ</button>
 
-  <!-- 飛び先のコンテンツ -->
-  <div id="target1" class="target">
-    <h2>ここがターゲット1！</h2>
-  </div>
-  <
+  <!-- ターゲット -->
+  <div id="target1" class="target">ここがターゲット1！</div>
+  <div id="target2" class="target">ここがターゲット2！</div>
+  <div id="target3" class="target">ここがターゲット3！</div>
+
+  <script>
+    document.getElementById("jump1").addEventListener("click", () => {
+      location.href = "#target1";
+    });
+    document.getElementById("jump2").addEventListener("click", () => {
+      location.href = "#target2";
+    });
+    document.getElementById("jump3").addEventListener("click", () => {
+      location.href = "#target3";
+    });
+  </script>
+
+</body>
+</html>
