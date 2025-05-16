@@ -1,6 +1,14 @@
-const issueButton01 = document.getElementById("issueButton01");
-const target01 = document.getElementById("target01");
+const issueButton = [];
+for (let i = 1; i <=3; i++){
+  issueButton[i] = document.getElementById("issueButton[i]");
+};
 
-issueButton01.addEventListener("click", () => {
-  target01.scrollIntoView({ behavior: "smooth" });
+const target = [];
+for (let i = 1; i <=3; i++){
+  issueButton[i] = document.getElementById("target[i]]");
+};
+
+
+issueButton1.addEventListener("click", () => {
+  target1.scrollIntoView({ behavior: "smooth" });
 });
