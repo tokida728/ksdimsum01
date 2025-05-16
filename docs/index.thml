@@ -6,16 +6,20 @@
 </head>
 <body>
 
-  <!-- クリックするボタン -->
-  <button id="scrollButton">ここに移動</button>
+  <!-- 修正：IDを "issueButton01" に変更 -->
+  <button id="issueButton01">ここgit add .
+git commit -m "任意のコミットメッセージ"
+git push origin main
+に移動</button>
 
-  <!-- スクロール先のターゲット -->
-  <div id="targetSection" style="margin-top: 1000px;">
+  <!-- 修正：IDを "target01" に変更 -->
+  <div id="target01" style="margin-top: 1000px;">
     <h2>ここが目的地！</h2>
   </div>
 
-  <!-- JavaScriptファイルを読み込む（別ファイルにしている場合） -->
+  <!-- JavaScriptを読み込み -->
   <script src="script.js"></script>
 
 </body>
 </html>
+
