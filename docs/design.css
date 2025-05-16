@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  background-color: #800000; /* えんじ色 */
+  font-family: 'Noto Serif JP', serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+/* トップの看板 */
+header {
+  background-color: #800000;
+  background-image: url('/mnt/data/b091b8f5-f387-4388-94e1-f7dc8e86fadc.png');
+  background-repeat: repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 10px 20px;
+  border-bottom: 5px solid gold;
+  position: relative;
+}
+
+header h1 {
+  font-size: 8em;
+  color: gold;
+  border: 10px double gold;
+  display: inline-block;
+  padding: 100px 150px;
+  background-color: #400000;
+}
+
+/* 提灯型ボタン */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin: 60px 0;
+  padding: 40px 0;
+}
+
+.lantern-wrap {
+  text-align: center;
+}
+
+.lantern {
+  background: url('/mnt/data/b091b8f5-f387-4388-94e1-f7dc8e86fadc.png') no-repeat;
+  background-size: 500px 500px;  /* サイズを調整 */
+  background-position: 0px 0px;  /* 提灯の場所調整 */
+  width: 160px;
+  height: 220px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.lantern:hover {
+  transform: rotate(-3deg);
+}
+
+.lantern-label {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: white;
+}
+
+
+/* セクション（看板風） */
+section {
+  background-color: #400000;
+  margin: 50px auto;
+  width: 80%;
+  border: 5px double gold;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+section h2 {
+  color: gold;
+  font-size: 2em;
+  border-bottom: 2px solid gold;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* モバイル対応 */
+  @media screen and (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .lantern {
+    width: 120px;
+    height: 180px;
+    background-size: 500px 500px;
+  }
+}
+section {
+    width: 95%;
+  }
+  header h1 {
+    font-size: 5em;
+    padding: 40px 60px;
+}
+
+

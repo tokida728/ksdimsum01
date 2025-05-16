@@ -3,95 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>K's 点心</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #800000; /* えんじ色 */
-      font-family: 'Noto Serif JP', serif;
-      color: #fff;
-      scroll-behavior: smooth;
-    }
-
-    /* トップの看板 */
-    header {
-      background-color: #800000;
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Chinese_pattern_gold.png');
-      background-repeat: repeat;
-      background-size: contain;
-      text-align: center;
-      padding: 120px 20px;
-      border-bottom: 5px solid gold;
-    }
-
-    header h1 {
-      font-size: 7em;
-      color: gold;
-      border: 12px double gold;
-      display: inline-block;
-      padding: 50px 80px;
-      background-color: #400000;
-    }
-
-    /* 提灯型ボタン */
-    .menu {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin: 30px 0;
-    }
-
-    .lantern {
-      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Chinese_Lantern_icon.svg/240px-Chinese_Lantern_icon.svg.png') no-repeat center;
-      background-size: contain;
-      width: 100px;
-      height: 140px;
-      border: none;
-      cursor: pointer;
-      text-indent: -9999px;
-      transition: transform 0.2s ease-in-out;
-    }
-
-    .lantern:hover {
-      transform: rotate(-3deg);
-    }
-
-    /* セクション（看板風） */
-    section {
-      background-color: #400000;
-      margin: 50px auto;
-      width: 80%;
-      border: 5px double gold;
-      padding: 30px;
-      border-radius: 10px;
-    }
-
-    section h2 {
-      color: gold;
-      font-size: 2em;
-      border-bottom: 2px solid gold;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    /* モバイル対応 */
-    @media screen and (max-width: 600px) {
-      .menu {
-        flex-direction: column;
-        align-items: center;
-      }
-      .lantern {
-        width: 70px;
-        height: 100px;
-      }
-      section {
-        width: 95%;
-      }
-      header h1 {
-        font-size: 4em;
-        padding: 30px 40px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- トップの看板 -->
@@ -100,11 +12,20 @@
   </header>
 
   <!-- 提灯型ボタン -->
-  <div class="menu">
-    <button class="lantern" onclick="location.href='#about'">私たちについて</button>
-    <button class="lantern" onclick="location.href='#howto'">食べ方</button>
-    <button class="lantern" onclick="location.href='#menu'">メニュー</button>
+ <div class="menu">
+  <div class="lantern-wrap">
+    <button class="lantern" onclick="location.href='#about'"></button>
+    <p class="lantern-label">私たちについて</p>
   </div>
+  <div class="lantern-wrap">
+    <button class="lantern" onclick="location.href='#howto'"></button>
+    <p class="lantern-label">食べ方</p>
+  </div>
+  <div class="lantern-wrap">
+    <button class="lantern" onclick="location.href='#menu'"></button>
+    <p class="lantern-label">メニュー</p>
+  </div>
+</div>
 
   <!-- セクション：私たちについて -->
   <section id="about">
