@@ -2,44 +2,126 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ボタンで即ジャンプ</title>
+  <title>K's 点心</title>
   <style>
-    button {
-      font-size: 18px;
-      margin: 10px;
-      padding: 10px 20px;
+    body {
+      margin: 0;
+      background-color: #800000; /* えんじ色 */
+      font-family: 'Noto Serif JP', serif;
+      color: #fff;
+      scroll-behavior: smooth;
     }
-    .target {
-      margin-top: 1000px;
-      padding: 50px;
-      background: #f0f0f0;
-      border: 1px solid #ccc;
+
+    /* トップの看板 */
+    header {
+      background-color: #800000;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Chinese_pattern_gold.png');
+      background-repeat: repeat;
+      background-size: contain;
+      text-align: center;
+      padding: 120px 20px;
+      border-bottom: 5px solid gold;
+    }
+
+    header h1 {
+      font-size: 7em;
+      color: gold;
+      border: 12px double gold;
+      display: inline-block;
+      padding: 50px 80px;
+      background-color: #400000;
+    }
+
+    /* 提灯型ボタン */
+    .menu {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 30px 0;
+    }
+
+    .lantern {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Chinese_Lantern_icon.svg/240px-Chinese_Lantern_icon.svg.png') no-repeat center;
+      background-size: contain;
+      width: 100px;
+      height: 140px;
+      border: none;
+      cursor: pointer;
+      text-indent: -9999px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .lantern:hover {
+      transform: rotate(-3deg);
+    }
+
+    /* セクション（看板風） */
+    section {
+      background-color: #400000;
+      margin: 50px auto;
+      width: 80%;
+      border: 5px double gold;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    section h2 {
+      color: gold;
+      font-size: 2em;
+      border-bottom: 2px solid gold;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* モバイル対応 */
+    @media screen and (max-width: 600px) {
+      .menu {
+        flex-direction: column;
+        align-items: center;
+      }
+      .lantern {
+        width: 70px;
+        height: 100px;
+      }
+      section {
+        width: 95%;
+      }
+      header h1 {
+        font-size: 4em;
+        padding: 30px 40px;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- トップの看板 -->
+  <header>
+    <h1>K's 点心</h1>
+  </header>
 
-  <!-- ボタン（JSでジャンプ） -->
-  <button id="jump1">1にジャンプ</button>
-  <button id="jump2">2にジャンプ</button>
-  <button id="jump3">3にジャンプ</button>
+  <!-- 提灯型ボタン -->
+  <div class="menu">
+    <button class="lantern" onclick="location.href='#about'">私たちについて</button>
+    <button class="lantern" onclick="location.href='#howto'">食べ方</button>
+    <button class="lantern" onclick="location.href='#menu'">メニュー</button>
+  </div>
 
-  <!-- ターゲット -->
-  <div id="target1" class="target">ここがターゲット1！</div>
-  <div id="target2" class="target">ここがターゲット2！</div>
-  <div id="target3" class="target">ここがターゲット3！</div>
+  <!-- セクション：私たちについて -->
+  <section id="about">
+    <h2>私たちについて</h2>
+    <p>K's 点心は、伝統的な中華料理の魅力を現代の皆さまに届けるために誕生しました。素材と技術にこだわった一品をぜひご堪能ください。</p>
+  </section>
 
-  <script>
-    document.getElementById("jump1").addEventListener("click", () => {
-      location.href = "#target1";
-    });
-    document.getElementById("jump2").addEventListener("click", () => {
-      location.href = "#target2";
-    });
-    document.getElementById("jump3").addEventListener("click", () => {
-      location.href = "#target3";
-    });
-  </script>
+  <!-- セクション：食べ方 -->
+  <section id="howto">
+    <h2>食べ方</h2>
+    <p>まずはそのまま、素材の味を。次に特製ダレを少しつけて。お好みで酢やからしを加えるのもおすすめです。</p>
+  </section>
 
+  <!-- セクション：メニュー -->
+  <section id="menu">
+    <h2>メニュー</h2>
+    <p>焼売、小籠包、春巻き、特製餃子など、多彩な点心をご用意しています。季節限定メニューもお見逃しなく。</p>
+  </section>
 </body>
 </html>
