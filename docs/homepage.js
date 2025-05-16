@@ -1,18 +1,13 @@
 
 const issueButton = [];
-const target = [];
+const link = [];
 for (let i = 1; i <=3; i++){
   issueButton[i] = document.getElementById(`issueButton${i}`);
-  target[i] = document.getElementById(`target${i}`);
+  link[i] = document.getElementById(`link${i}`);
 
-  if (issueButton[i] && target[i]) {
+  if (issueButton[i] && link[i]) {
     issueButton[i].addEventListener("click", () => {
-      target[i].scrollIntoView();
-      target[i].style.transition = "background 0.3s";
-      target[i].style.background = "yellow";
-      setTimeout(() => {
-        target[i].style.background = "lightgray";
-      }, 600);
+      link[i].scrollIntoView();
     });
   }
 };

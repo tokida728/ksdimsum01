@@ -6,21 +6,19 @@
 </head>
 <body>
 
-  <!-- ボタンではなくリンクにする -->
-  <a href="#target1">1に移動</a>
-  <a href="#target2">2に移動</a>
-  <a href="#target3">3に移動</a>
+  <!-- 目次リンク（見せない用でもOK） -->
+  <a href="#target1" id="link1">1へ</a>
+  <a href="#target2" id="link2">2へ</a>
+  <a href="#target3" id="link3">3へ</a>
+
+  <!-- ボタン：これを押すと link1 を踏む -->
+  <button id="jumpButton">1にジャンプ（リンクを踏む）</button>
 
   <!-- 飛び先 -->
-  <div id="target1" style="margin-top: 1000px;">
-  <h2>ここが目的地1！</h2>
-  </div>
-  <div id="target2" style="margin-top: 1000px;">
-  <h2>ここが目的地2！</h2>
-  </div>
-  <div id="target3" style="margin-top: 1000px;">
-  <h2>ここが目的地3！</h2>
-  </div>
+  <div id="target1" style="margin-top: 1000px;">ここがターゲット1！</div>
+  <div id="target2" style="margin-top: 1000px;">ここがターゲット2！</div>
+  <div id="target3" style="margin-top: 1000px;">ここがターゲット3！</div>
+
 
 
   <script src="script.js"></script>
