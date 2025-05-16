@@ -1,3 +1,4 @@
+
 const issueButton = [];
 for (let i = 1; i <=3; i++){
   issueButton[i] = document.getElementById("issueButton[i]");
@@ -9,6 +10,6 @@ for (let i = 1; i <=3; i++){
 };
 
 
-issueButton1.addEventListener("click", () => {
-  target1.scrollIntoView({ behavior: "smooth" });
+issueButton.addEventListener("click", () => {
+  target.scrollIntoView({ behavior: "smooth" });
 });
