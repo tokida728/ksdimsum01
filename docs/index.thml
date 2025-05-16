@@ -1,7 +1,21 @@
-<!-- スクロールするためのボタン -->
-<button id="scrollButton">ここに移動</button>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>スクロールテスト</title>
+</head>
+<body>
 
-<!-- スクロール先の場所（ターゲット） -->
-<div id="targetSection" style="margin-top: 1000px;">
-  <h2>ここが目的地！</h2>
-</div>
+  <!-- クリックするボタン -->
+  <button id="scrollButton">ここに移動</button>
+
+  <!-- スクロール先のターゲット -->
+  <div id="targetSection" style="margin-top: 1000px;">
+    <h2>ここが目的地！</h2>
+  </div>
+
+  <!-- JavaScriptファイルを読み込む（別ファイルにしている場合） -->
+  <script src="script.js"></script>
+
+</body>
+</html>
