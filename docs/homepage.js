@@ -6,6 +6,6 @@ for (let i = 1; i <=3; i++){
   target[i] = document.getElementById(`target${i}`);
 
   issueButton[i].addEventListener("click", () => {
-    target[i].scrollIntoView({ behavior: "smooth" });
+    target[i].scrollIntoView();
   });
 };
