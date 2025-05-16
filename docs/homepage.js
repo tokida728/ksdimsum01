@@ -7,7 +7,7 @@ for (let i = 1; i <=3; i++){
 
   if (issueButton[i] && link[i]) {
     issueButton[i].addEventListener("click", () => {
-      link[i].scrollIntoView();
+      link[i].click();
     });
   }
 };

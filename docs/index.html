@@ -2,24 +2,30 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>スクロールテスト</title>
+  <title>ボタンで即ジャンプ</title>
+  <style>
+    /* リンクは非表示にしておく */
+    .hidden-link {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- 目次リンク（見せない用でもOK） -->
-  <a href="#target1" id="link1">1へ</a>
-  <a href="#target2" id="link2">2へ</a>
-  <a href="#target3" id="link3">3へ</a>
+  <!-- 非表示リンク（ページ内ジャンプ用） -->
+  <a href="#target1" id="link1" class="hidden-link">1へ</a>
+  <a href="#target2" id="link2" class="hidden-link">2へ</a>
+  <a href="#target3" id="link3" class="hidden-link">3へ</a>
 
-  <!-- ボタン：これを押すと link1 を踏む -->
-  <button id="jumpButton">1にジャンプ（リンクを踏む）</button>
+  <!-- 見た目上のボタン -->
+  <button id="issueButton1">1にジャンプ</button>
+  <button id="issueButton2">2にジャンプ</button>
+  <button id="issueButton3">3にジャンプ</button>
 
-  <!-- 飛び先 -->
+  <!-- ジャンプ先 -->
   <div id="target1" style="margin-top: 1000px;">ここがターゲット1！</div>
   <div id="target2" style="margin-top: 1000px;">ここがターゲット2！</div>
   <div id="target3" style="margin-top: 1000px;">ここがターゲット3！</div>
-
-
 
   <script src="script.js"></script>
 
