@@ -4,29 +4,40 @@
   <meta charset="UTF-8">
   <title>ボタンで即ジャンプ</title>
   <style>
-    /* リンクは非表示にしておく */
+    /* リンクは非表示（でもクリックできるようにする） */
     .hidden-link {
-      display: none;
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- 非表示リンク（ページ内ジャンプ用） -->
+  <!-- 非表示リンク（内部ジャンプ用） -->
   <a href="#target1" id="link1" class="hidden-link">1へ</a>
   <a href="#target2" id="link2" class="hidden-link">2へ</a>
   <a href="#target3" id="link3" class="hidden-link">3へ</a>
 
-  <!-- 見た目上のボタン -->
+  <!-- 見た目のボタン -->
   <button id="issueButton1">1にジャンプ</button>
   <button id="issueButton2">2にジャンプ</button>
   <button id="issueButton3">3にジャンプ</button>
 
-  <!-- ジャンプ先 -->
-  <div id="target1" style="margin-top: 1000px;">ここがターゲット1！</div>
-  <div id="target2" style="margin-top: 1000px;">ここがターゲット2！</div>
-  <div id="target3" style="margin-top: 1000px;">ここがターゲット3！</div>
+  <!-- 飛び先のコンテンツ -->
+  <div id="target1" style="margin-top: 1000px;">
+    <h2>ここがターゲット1！</h2>
+  </div>
+  <div id="target2" style="margin-top: 1000px;">
+    <h2>ここがターゲット2！</h2>
+  </div>
+  <div id="target3" style="margin-top: 1000px;">
+    <h2>ここがターゲット3！</h2>
+  </div>
 
+  <!-- JavaScript読み込み -->
   <script src="script.js"></script>
 
 </body>
