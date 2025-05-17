@@ -14,35 +14,33 @@
   <!-- 提灯型ボタン -->
   <div class="menu">
     <div class="lantern-wrap">
-      <button class="lantern" onclick="location.href='#about'" aria-label="私たちについて"></button>
-      <p class="lantern-label">私たちについて</p>
+      <button class="lantern" id="issueButton1">私たちについて</button>
     </div>
     <div class="lantern-wrap">
-      <button class="lantern" onclick="location.href='#howto'"></button>
-      <p class="lantern-label">食べ方</p>
+      <button class="lantern" id="issueButton2">食べ方</button>
     </div>
     <div class="lantern-wrap">
-      <button class="lantern" onclick="location.href='#menu'"></button>
-      <p class="lantern-label">メニュー</p>
+      <button class="lantern" id="issueButton3">メニュー</button>
     </div>
   </div>
 
-  <!-- セクション：私たちについて -->
-  <section id="about">
+  <!-- セクション -->
+  <section id="target1">
     <h2>私たちについて</h2>
-    <p>K's 点心は、伝統的な中華料理の魅力を現代の皆さまに届けるために誕生しました。素材と技術にこだわった一品をぜひご堪能ください。</p>
+    <p>K's 点心は、伝統的な中華料理の魅力を〜</p>
   </section>
 
-  <!-- セクション：食べ方 -->
-  <section id="howto">
+  <section id="target2">
     <h2>食べ方</h2>
-    <p>まずはそのまま、素材の味を。次に特製ダレを少しつけて。お好みで酢やからしを加えるのもおすすめです。</p>
+    <p>まずはそのまま、素材の味を〜</p>
   </section>
 
-  <!-- セクション：メニュー -->
-  <section id="menu">
+  <section id="target3">
     <h2>メニュー</h2>
-    <p>焼売、小籠包、春巻き、特製餃子など、多彩な点心をご用意しています。季節限定メニューもお見逃しなく。</p>
+    <p>焼売、小籠包、春巻き〜</p>
   </section>
+
+  <!-- JavaScriptをbodyの一番下に読み込む -->
+  <script src="homepage.js"></script>
 </body>
 </html>
