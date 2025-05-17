@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>K's Dim Sum</title>
+  <title>K's 點心</title>
   <link rel="stylesheet" href="design.css">
   <style>
     .language-selector {
@@ -58,45 +58,45 @@
   <div class="language-selector">
     <select id="languageSwitcher">
       <option value="ja">日本語</option>
-      <option value="en" selected>English</option>
-      <option value="zh">中文</option>
+      <option value="en">English</option>
+      <option value="zh" selected>中文</option>
     </select>
   </div>
 
   <header>
-    <h1>K's Dim Sum</h1>
+    <h1>K's 點心</h1>
   </header>
 
   <div class="menu">
     <div class="lantern-wrap">
-      <button class="lantern" id="issueButton1">About Us</button>
+      <button class="lantern" id="issueButton1">關於我們</button>
     </div>
     <div class="lantern-wrap">
-      <button class="lantern" id="issueButton2">How to Eat</button>
+      <button class="lantern" id="issueButton2">食用方式</button>
     </div>
     <div class="lantern-wrap">
-      <button class="lantern" id="issueButton3">Menu</button>
+      <button class="lantern" id="issueButton3">菜單</button>
     </div>
   </div>
 
   <section id="target1">
-    <h2>About Us</h2>
-    <p>K's Dim Sum was created to share the charm of traditional Chinese cuisine with the modern world. We take pride in using carefully selected ingredients and expert craftsmanship to bring you every dish.</p>
+    <h2>關於我們</h2>
+    <p>K's 點心旨在將傳統中華料理的魅力傳遞給現代社會。我們堅持嚴選食材與精湛工藝，邀您品嚐每一道心意之作。</p>
   </section>
 
   <section id="target2">
-    <h2>How to Eat</h2>
-    <p>1. Use chopsticks to poke a hole and release the soup.<br>
-       2. Take a big bite.<br>
-       *Caution: If you eat it immediately without poking a hole, the soup may spurt out!</p>
+    <h2>食用方式</h2>
+    <p>1. 用筷子戳破湯包釋放湯汁。<br>
+       2. 大口咬下享用。<br>
+       ※注意！未先戳破直接咬可能會噴湯！！</p>
   </section>
 
   <section id="target3">
-    <h2>Menu</h2>
-    <p>- Fried Soup Dumplings<br>
-       (2 pieces) - 500 yen<br>
-       (3 pieces) - 700 yen<br>
-       - Hong Kong Lemon Tea - 200 yen</p>
+    <h2>菜單</h2>
+    <p>・煎湯包<br>
+       （2顆）- 500日圓<br>
+       （3顆）- 700日圓<br>
+       ・香港檸檬茶 - 200日圓</p>
   </section>
 
   <script>
@@ -114,8 +114,8 @@
       document.getElementById("languageSwitcher").addEventListener("change", (e) => {
         const lang = e.target.value;
         if (lang === "ja") location.href = "index.html";
-        else if (lang === "zh") location.href = "indexZh.html";
-        else location.href = "indexEn.html";
+        else if (lang === "en") location.href = "indexEn.html";
+        else location.href = "indexZh.html";
       });
     });
   </script>
