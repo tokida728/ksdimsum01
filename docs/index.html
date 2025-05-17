@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>K's 点心</title>
-  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- トップの看板 -->
@@ -12,20 +12,20 @@
   </header>
 
   <!-- 提灯型ボタン -->
- <div class="menu">
-  <div class="lantern-wrap">
-    <button class="lantern" onclick="location.href='#about'"></button>
-    <p class="lantern-label">私たちについて</p>
+  <div class="menu">
+    <div class="lantern-wrap">
+      <button class="lantern" onclick="location.href='#about'" aria-label="私たちについて"></button>
+      <p class="lantern-label">私たちについて</p>
+    </div>
+    <div class="lantern-wrap">
+      <button class="lantern" onclick="location.href='#howto'"></button>
+      <p class="lantern-label">食べ方</p>
+    </div>
+    <div class="lantern-wrap">
+      <button class="lantern" onclick="location.href='#menu'"></button>
+      <p class="lantern-label">メニュー</p>
+    </div>
   </div>
-  <div class="lantern-wrap">
-    <button class="lantern" onclick="location.href='#howto'"></button>
-    <p class="lantern-label">食べ方</p>
-  </div>
-  <div class="lantern-wrap">
-    <button class="lantern" onclick="location.href='#menu'"></button>
-    <p class="lantern-label">メニュー</p>
-  </div>
-</div>
 
   <!-- セクション：私たちについて -->
   <section id="about">

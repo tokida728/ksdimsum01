@@ -31,25 +31,32 @@ header h1 {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 100px; /* ボタン間の間隔を広く */
-  margin: 60px 0;
+  gap: 200px; /* ボタン間の間隔を広く */
+  margin: 10px 0;
   padding: 40px 0;
 }
 
 .lantern {
-  background: url('1c49b29c-d4a0-4f6c-8747-45560e76a84c.png') no-repeat center center;
-  background-size: contain;
-  width: 160px;
-  height: 220px;
-  border: none;
+  background-color: #400000;
+  color: gold;
+  border: 5px double gold;
+  width: 150px;
+  height: 70px;
   cursor: pointer;
-  text-indent: -9999px;
+  font-size: 1.2em;
+  font-family: 'Noto Serif JP', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   transition: transform 0.2s ease-in-out;
 }
 
 .lantern:hover {
   transform: rotate(-3deg);
 }
+
+
 
 /* セクション（看板風） */
 section {
