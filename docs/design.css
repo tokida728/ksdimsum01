@@ -31,7 +31,7 @@ header h1 {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 200px; /* ボタン間の間隔を広く */
+  gap: 150px; /* ボタン間の間隔を広く */
   margin: 10px 0;
   padding: 40px 0;
 }
